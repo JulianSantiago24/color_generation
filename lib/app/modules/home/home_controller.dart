@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:color_generation/app/routes/app_pages.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,7 +12,7 @@ class HomeController extends GetxController {
   /// Store data in memory
   final getStorge = GetStorage();
   /// Initialize background color variable
-  Rx<MaterialColor> color = Colors.blue.obs;
+  Rx<Color> color = Color.fromARGB(255, 30, 31, 56).obs;
 
   @override
   void onInit() {
@@ -26,6 +27,8 @@ class HomeController extends GetxController {
   @override
   void onClose() {
     super.onClose();
+    Get.offNamed<dynamic>(Routes.LOGIN);
+    
   }
   
   /// Controller to Change background Color

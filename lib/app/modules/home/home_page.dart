@@ -19,8 +19,24 @@ class HomePage extends GetView<HomeController> {
               child:  Text(
                 'Hello There',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
               ),
+            ),
+            floatingActionButton: FloatingActionButton.extended(
+              onPressed: () {
+               controller.onClose();
+               Get.snackbar(
+                  'Time to say',
+                  'Thanks and goodbye',
+                  snackPosition: SnackPosition.TOP,
+                );
+              },
+              label: const Text('BACK'),
+              icon: const Icon(Icons.arrow_back_ios),
+              backgroundColor: Colors.pink,
             ),
           ),
       ),
