@@ -19,7 +19,8 @@ class HomePage extends GetView<HomeController> {
                 'hello'.tr,
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 30,
+                  fontSize: 50,
+                  fontFamily: 'ShadowsIntoLight',
                   color: Colors.white,
                 ),
               ),
@@ -33,7 +34,12 @@ class HomePage extends GetView<HomeController> {
                   snackPosition: SnackPosition.TOP,
                 );
               },
-              label: Text('back'.tr,),
+              label: Text(
+                'back'.tr,
+                style: const TextStyle(
+                  fontFamily: 'Righteous',
+                ),
+              ),
               icon: const Icon(Icons.arrow_back_ios),
               backgroundColor: Colors.pink,
             ),

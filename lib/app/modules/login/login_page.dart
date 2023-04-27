@@ -21,7 +21,8 @@ class LoginPage extends GetView<LoginController> {
                     'start'.tr,
                     style: const TextStyle(
                       fontSize: 45,
-                      color: Colors.white,              
+                      fontFamily: 'Pacifico',
+                      color: Colors.white,                           
                     ),
                   ),
                   onPressed: () {
@@ -53,13 +54,23 @@ class _LanguagueButtons extends StatelessWidget {
           onPressed: () => messagesController.chaneLanguague(
             'en', 'US',
           ),
-          child: const Text('English'),
+          child: const Text(
+            'English',
+            style: TextStyle(
+              fontFamily: 'Righteous',
+            ),
+          ),
         ),
         FilledButton.tonal(
           onPressed: () => messagesController.chaneLanguague(
             'es', 'CO',
           ),
-          child: const Text('Español'),
+          child: const Text(
+            'Español',
+            style: TextStyle(
+              fontFamily: 'Righteous',
+            ),
+          ),
         ),
       ],
     );
