@@ -17,8 +17,10 @@ class LoginPage extends GetView<LoginController> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextButton(
+                  key: const Key('start_textButton'),
                   child: Text(
                     'start'.tr,
+                    key: const Key('start_text'),
                     style: const TextStyle(
                       fontSize: 45,
                       fontFamily: 'Pacifico',
