@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 /// Main page to change background color
-
 class HomePage extends GetView<HomeController> {
 
   @override
@@ -15,12 +14,13 @@ class HomePage extends GetView<HomeController> {
         },
         child: Scaffold(
             backgroundColor: controller.color.value,
-            body: const Center(
+            body: Center(
               child:  Text(
-                'Hello There',
+                'hello'.tr,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
+                style: const TextStyle(
+                  fontSize: 50,
+                  fontFamily: 'ShadowsIntoLight',
                   color: Colors.white,
                 ),
               ),
@@ -29,12 +29,17 @@ class HomePage extends GetView<HomeController> {
               onPressed: () {
                controller.onClose();
                Get.snackbar(
-                  'Time to say',
-                  'Thanks and goodbye',
+                  'snackbar_title'.tr,
+                  'snackbar_message'.tr,
                   snackPosition: SnackPosition.TOP,
                 );
               },
-              label: const Text('BACK'),
+              label: Text(
+                'back'.tr,
+                style: const TextStyle(
+                  fontFamily: 'Righteous',
+                ),
+              ),
               icon: const Icon(Icons.arrow_back_ios),
               backgroundColor: Colors.pink,
             ),

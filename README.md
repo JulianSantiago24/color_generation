@@ -1,12 +1,49 @@
-# flutter_project_template
-📖 Template for flutter projects using solid_lints, CI for tests and analysis.
+# Flutter APP - Generation of random colors
 
-- Uses latest stable flutter
-- Repo name as your project name
-- Organization from your profile email address or default
+The application display a Login Page, with a beatiful UI, here you can swicht language and you could go to home page tapping a textbutton. Then the text "Hello there" or "Hola"(This depends on the language.) in the middle of the home screen and after tapping anywhere on the screen, a background color should be changed to a randomly generated color. Come back to login page with floating Action button in order to display a snackbar there with a final message.
 
-# Usage
-1. Press "Use this template" on the menu.
-2. Fill Github form with your new repo name and press "Create repository from template"
-3. Wait for it to be created and set up action is complete. In a couple of minutes, you'll see the flutter project created in your repo once Github Actions are complete.
-4. Clone and code.
+
+## UI
+
+![image](https://user-images.githubusercontent.com/76113377/235070610-2114a08f-362d-4284-aa88-5f2686ed0981.png)
+
+
+## Getting Started
+
+
+## How to Use 
+
+**Step 1:**
+
+Download or clone this repo
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get 
+```
+
+**Step 3:**
+
+Go to project root and execute the following command in console to create directroy:
+
+```
+flutter create .
+```
+
+**Step 4:**
+
+Launch preferred emulator
+
+**Step 5:**
+
+Go to project root and execute the following command in console to run the APP:
+
+```
+flutter run
+```
+
+
+Made with ❤ by JulianJaramillo
